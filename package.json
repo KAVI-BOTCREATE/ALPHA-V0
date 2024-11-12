@@ -1,0 +1,25 @@
+{
+  "name": "alpha-v0",
+  "version": "1.0.0",
+  "description": "Multi-device whatsapp bot , made by kavi_official 2024",
+  "main": "lib/alpha.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "node lib/alpha.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "Alpha-v0",
+    "kavi_official"
+  ],
+  "author": "KAVINDU DILSHARA",
+  "license": "ISC",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.9",
+    "axios": "^1.7.7",
+    "megajs": "^1.3.3",
+    "pino": "^9.5.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
