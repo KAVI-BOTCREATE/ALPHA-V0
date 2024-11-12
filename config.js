@@ -1,5 +1,10 @@
+const fs = require('fs');
+if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
+
+function convertToBool(text, fault = 'true') {
+    return text === fault ? true : false;
+}
 module.exports = {
-    SESSION_ID: 'YOUR_MEGA_SESSION_ID_HERE',  // Mega.nz Session ID එක මෙහි දාන්න
-    ownerNumber: ['94704467936'],             // ඔබගේ අංකය මෙහි දැමීම
-    prefix: '.',                              // Bot එකේ prefix එක
+SESSION_ID: process.env.SESSION_ID || "HWgRWRhK#f9gR7Hk-VS6rNbXYI9Ms5bdT2oi81AS5CGrXSjwVIfM"
+
 };
